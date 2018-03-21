@@ -68,10 +68,10 @@ while text:	# that is, while len(text)>0
 	token,position = scan(text,td,ad)
 	
 	if token=='ERROR_TOKEN':
-		print('unrecognized input at pos',position+1,'of',text)
+		print('token:',token,' unrecognized input at pos',position+1,'of',text)
 		break
 	
-	print("token:",token,"string:",text[:position])
+	print("token:",token," string:",text[:position])
 	
 	# remaining text for next scan
 	text = text[position:]
